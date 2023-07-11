@@ -13,4 +13,4 @@ class Car:
         return self.battery.batteryShouldBeServiced()
 
     def needsService(self):
-        pass
+        return self.engineShouldBeServiced() or self.batteryShouldBeServiced()
