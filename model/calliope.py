@@ -1,3 +1,5 @@
+import sys
+sys.path.append('/Users/owais/OneDrive/Documents/forage-lyft-starter-repo')
 from car import Car
 from engine.capulet import Capulet
 from battery.spindler import Spindler

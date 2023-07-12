@@ -1,5 +1,7 @@
-from engine import Engine
-from battery import Battery
+import sys
+sys.path.append('/Users/owais/OneDrive/Documents/forage-lyft-starter-repo')
+from engines import Engine
+from batteries import Battery
 
 class Car:
     def __init__(self, engine, battery):
