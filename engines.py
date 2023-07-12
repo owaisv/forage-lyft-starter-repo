@@ -1,5 +1,4 @@
-import sys
-sys.path.append('/Users/owais/OneDrive/Documents/forage-lyft-starter-repo')
+
 from abc import ABC, abstractmethod
 
 class Engine(ABC):

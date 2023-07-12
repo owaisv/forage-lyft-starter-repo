@@ -2,12 +2,12 @@ from datetime import datetime
 from batteries import Battery
 
 class Nubbin(Battery):
-    def __init__(self, last_service_date):
-        super().__init__(last_service_date)
-        self.last_service_date = last_service_date
+    def __init__(self, lastServiceDate):
+        super().__init__(lastServiceDate)
+        self.lastServiceDate = lastServiceDate
 
     def batteryShouldBeServiced(self):
-        newServiceDate = self.last_service_date.replace(year=self.last_service_date.year + 4)
+        newServiceDate = self.lastServiceDate.replace(year=self.lastServiceDate.year + 4)
         
         if newServiceDate < datetime.today().date():
             return True
